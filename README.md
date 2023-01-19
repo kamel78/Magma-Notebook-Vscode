@@ -5,7 +5,7 @@ This extension adds language support for the [ Magma computational algebra syste
 ## Features
 
 + Syntax highlighting
-+ A MagmaNotebook extension that uses the built-in notebook support from VS Code. This UI gives a number of advantages to users of notebooks:
++ A MagmaNotebook extension that uses the built-in notebook support from VS Code. This UI gives a number of advantages to users :
   + Out of the box support for VS Code's vast array of basic code editing features like hot exit, find & replace, and code folding.
   + Editor extensions like VIM, bracket colorization, linters and many more are available while editing a cell.
   + Deep integration with general workbench and file-based features in VS Code.
