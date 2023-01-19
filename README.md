@@ -28,6 +28,13 @@ This extension contributes the following settings:
 
 ![alt text](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/images/screenshot2.png)
 
+## IDE features
+
+Creation of new Magma Notebbok from the File> New files... menue (custom notebook editor).
+
+![alt text](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/images/screenshot3.png)
+
+
 ## Installation
 
 ### Visual Studio Code
