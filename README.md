@@ -1,6 +1,6 @@
 # Magma Notebook 
 
-This extension adds language support for the [ Magma computational algebra system](http://magma.maths.usyd.edu.au/magma/) to Visual Studio Code. Its provides several features as can be seen below.
+This extension adds language support and kernel run for the [ Magma computational algebra system](http://magma.maths.usyd.edu.au/magma/) to Visual Studio Code. Its provides several features as can be seen below.
 
 ## Features
 
