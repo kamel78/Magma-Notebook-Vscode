@@ -30,7 +30,7 @@ This extension contributes the following settings:
 
 ## IDE features
 
-Creation of new Magma Notebbok from the File> New files... menue (custom notebook editor).
+Creation of new Magma Notebbok from the File> New files... menu (custom notebook editor).
 
 ![alt text](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/images/screenshot3.png)
 
