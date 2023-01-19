@@ -52,4 +52,9 @@ In order to install the extension locally, clone the GitHub repository under you
 
 
 
-Created by FARAOUN Kamel Mohamed (Jan 2023)
+
+
+
+
+
+**Created by FARAOUN Kamel Mohamed (Jan 2023)**
