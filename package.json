@@ -1,0 +1,115 @@
+{
+  "name": "magmanotebook",
+  "displayName": "Magma Notebook (.imagma)",
+  "description": "",
+  "icone ":"https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/magma-ressources/icon/magma.PNG",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": ["onNotebook:magma-notebook","onLanguage:magma","onLanguage:spec","onCommand:magma-notebook.newNotebook"],
+  "contributes": {
+    "menus": {
+			"file/newFile": [
+				{					
+          "command": "magma-notebook.newNotebook"
+				}
+			]
+		},
+         "configuration":[ 
+        {          
+          "title": "Magma Engine Parametres",
+          "properties": {
+            
+                    "magma.path": {
+                                              "type": "string",
+                                              "default": "",
+                                              "description": "Gives the path to installed magma application."
+                                              },
+                    "magma.serverport": { "type": "integer",
+                                          "default": 9001,
+                                          "description": "Choose a TCP port for the local server ."
+                                          }
+                        }     
+          }
+        ],
+      "notebooks": [
+          {
+              "id": "magma-notebook",
+              "type": "magma-notebook",
+              "displayName": "Magma Notebook",
+              "selector": [
+                  {
+                      "filenamePattern": "*.imagma"
+                  }
+              ]
+          }
+      ],
+      "commands": [
+        {
+            "command": "magma-notebook.newNotebook",
+            "title": "New Magma Notebook",
+            "shortTitle": "Magma Book",
+            "category": "notebook"
+        }
+            ],
+
+      "languages": [
+        {
+          "id": "magma",
+          "aliases": [
+            "Magma",
+            "magma"
+          ],
+          "extensions": [
+            ".m",
+            ".mag",
+            ".magma",
+            "..magmarc",
+            "..magmarc-dev"
+          ],
+          "configuration": "./magma-ressources/language-configuration.json"
+        }
+       
+      ],
+      "grammars": [
+        {
+          "language": "magma",
+          "scopeName": "source.magma",
+          "path": "./magma-ressources/syntaxes/magma.tmLanguage"
+        }
+        
+      ],
+      "snippets": [
+        {
+          "language": "magma",
+          "path": "./magma-ressources/snippets/snippets.json"
+        }
+      ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  }
+}
