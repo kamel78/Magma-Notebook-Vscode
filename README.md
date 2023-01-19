@@ -16,7 +16,7 @@ This extension adds language support for the Magma computational algebra system 
   + Run several Magma environments in different Notebooks, each with corresponding variables and definitions.
 + Snippests
 
-\!\[feature X\]\(images/feature-x.png\)
+\!\[feature X\].\(images/screenshot1.png\)
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 Installed and fully functional version of Magma (either under Windows, Mac or Linux).![image](https://user-images.githubusercontent.com/16413972/213538981-cfaa452a-2c68-40cf-8d3a-783056eda5d0.png)
