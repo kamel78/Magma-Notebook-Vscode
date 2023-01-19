@@ -1,72 +1,60 @@
-# magmanotebook README
+# Magma Notebook 
 
-This extension enable support and use of the Magma computational algebra system in Visual Studio Code. Its implements a Notebook mechanism for Magma coding.
-Each notebook use a different Magma session with corresponding environments (variables, functions, structures .....).
+This extension adds language support for the Magma computational algebra system to Visual Studio Code. Its provides several features as can be seen below.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
++ Syntax highlighting
++ A MagmaNotebook extension that uses the built-in notebook support from VS Code. This UI gives a number of advantages to users of notebooks:
+  + Out of the box support for VS Code's vast array of basic code editing features like hot exit, find & replace, and code folding.
+  + Editor extensions like VIM, bracket colorization, linters and many more are available while editing a cell.
+  + Deep integration with general workbench and file-based features in VS Code.
+  + Includes a notebook-friendly diff tool, making it much easier to compare and see differences between code cells, output and metadata.
+  + Run several Magma environments in different Notebooks, each with corresponding variables and definitions.
++ Snippests
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![alt text](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/images/screenshot1.png)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Installed and fully functional version of Magma (either under Windows, Mac or Linux).
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* `magma.path`: Define the path to the installed magma application (ie. "C:\Program Files (x86)\Magma\" under windows, or /Applications/Magma/ under Mac)
+* `magma.port`: Internal TCP port used to ensure kernel connection with magma, has to be changed only if the default port "9001" is already used by another application.
 
-## Known Issues
+![alt text](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/images/screenshot2.png)
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## IDE features
 
-## Release Notes
+Creation of new Magma Notebbok from the File> New files... menu (custom notebook editor).
 
-Users appreciate release notes as you update your extension.
+![alt text](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/images/screenshot3.png)
 
-### 1.0.0
 
-Initial release of ...
+## Installation
 
-### 1.0.1
+### Visual Studio Code
+To install the extension from Visual Studio Code use the extension panel and search for magmanotebook.
 
-Fixed issue #.
+### Installing Locally
+In order to install the extension locally, clone the GitHub repository under your local extensions folder:
 
-### 1.1.0
++ Windows: %USERPROFILE%\.vscode\extensions
++ Mac / Linux: $HOME/.vscode/extensions
 
-Added features X, Y, and Z.
+## License
 
----
+**Magma-Notebook-Vscode** is licensed under the MIT License; see [Link](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/LICENSE "LICENSE").  for details.
 
-## Following extension guidelines
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-## Working with Markdown
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
-## For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Created by FARAOUN Kamel Mohamed (Jan 2023)**
