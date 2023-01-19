@@ -174,7 +174,9 @@ class MagmaController {
                                   if (this.magmaActiveRuns[notebookid]==undefined)
                                       {this.magmaActiveRuns[notebookid] ={socket:new Socket(),context:undefined,outputcell:execution,codeRunEnd:true,
                                                                           header:"",activeoutput:""};
-                                      this.magmaActiveRuns[notebookid].context=this._connectNewClient(notebookid);
+                                      this.magmaActiveRuns[notebookid].context=this._connectNewClient(notebookid).
+                                                                              then(()=>{this._runMagmaCode(notebookid,"SetAutoColumns(false);SetColumns(1000);");
+                                                                              this.magmaActiveRuns[notebookid].codeRunEnd=false;});
                                       }           
                                   if (this.magmaActiveRuns[notebookid].codeRunEnd)
                                           { execution.start(Date.now()); 
