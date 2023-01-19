@@ -1,20 +1,26 @@
-# magmanotebook README
+# Magma Notebook 
 
-This is the README for your extension "magmanotebook". After writing up a brief description, we recommend including the following sections.
+This extension adds language support for the Magma computational algebra system to Visual Studio Code. Its provides several features as can be seen below.
 
 ## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
++ Syntax highlighting
++ A MagmaNotebook extension that uses the built-in notebook support from VS Code. This UI gives a number of advantages to users of notebooks:
+  + Out of the box support for VS Code's vast array of basic code editing features like hot exit, find & replace, and code folding.
+  + Editor extensions like VIM, bracket colorization, linters and many more are available while editing a cell.
+  + Deep integration with general workbench and file-based features in VS Code.
+  + Includes a notebook-friendly diff tool, making it much easier to compare and see differences between code cells, output and metadata.
+  + Run several Magma environments in different Notebooks, each with corresponding variables and definitions.
++ Snippests
+
+\!\[feature X\]\(images/feature-x.png\)
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Installed and fully functional version of Magma (either under Windows, Mac or Linux).![image](https://user-images.githubusercontent.com/16413972/213538981-cfaa452a-2c68-40cf-8d3a-783056eda5d0.png)
+
 
 ## Extension Settings
 
