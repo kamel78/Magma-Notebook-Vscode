@@ -48,7 +48,7 @@ In order to install the extension locally, clone the GitHub repository under you
 
 ## License
 
-VSCODE-MAGMANOTEBOOK is licensed under the MIT License; see LICENSE for details.
+*Magma-Notebook-Vscode* is licensed under the MIT License; see [Link](https://example.com/ "LICENSE").  for details.
 
 
 ---
