@@ -24,7 +24,7 @@ Installed and fully functional version of Magma (either under Windows, Mac or Li
 This extension contributes the following settings:
 
 * `magma.path`: Define the path to the installed magma application (ie. "C:\Program Files (x86)\Magma\" under windows, or /Applications/Magma/ under Mac)
-* `magma.path`: Internal TCP port used to ensure kernel connection with magma, has to be changed only if the default port "9001" is already used by another application.
+* `magma.port`: Internal TCP port used to ensure kernel connection with magma, has to be changed only if the default port "9001" is already used by another application.
 
 ![alt text](https://github.com/kamel78/Magma-Notebook-Vscode/blob/main/images/screenshot2.png)
 
